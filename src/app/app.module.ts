@@ -4,27 +4,31 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
+
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
 @NgModule({
   declarations: [
-    MyApp,
-    HomePage
+	MyApp,
+	HomePage
   ],
   imports: [
-    BrowserModule,
-    IonicModule.forRoot(MyApp)
+	BrowserModule,
+	IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HomePage
+	MyApp,
+	HomePage
   ],
   providers: [
-    StatusBar,
-    SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+	StatusBar,
+	SplashScreen,
+	BackgroundGeolocation,
+	{provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}

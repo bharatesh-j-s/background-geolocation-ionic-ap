@@ -1,4 +1,4 @@
-#Sat Sep 07 10:29:15 IST 2019
+#Sat Sep 07 11:35:03 IST 2019
 base.0=/Library/WebServer/Documents/ionic/background-geolocation-ionic-app/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
